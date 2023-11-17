@@ -1,5 +1,3 @@
-const videoEl = document.querySelector("video");
-videoEl.volume = 0.1
 const submitBtn = document.querySelector(".submit");
 const input = document.querySelector(".input__card");
 const names = [
@@ -28,7 +26,6 @@ submitBtn.addEventListener("click", () => {
   document.querySelector('label').classList.add('none');
   document.querySelector('h1').classList.add('none');
   submitBtn.classList.add('none')
-  videoEl.volume = 1
  document.querySelector('.wrapper__input').insertAdjacentHTML('beforeend',`<h1 class="name">Ты на 99% => ${names[Math.round(Math.random()*names.length)]}</h1>`)
 });
 input.addEventListener("input", (e) => {
