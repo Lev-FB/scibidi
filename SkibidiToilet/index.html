@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Scibidi</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__main-info">
+        <div class="wrapper__input">
+          <h1 class="title">
+            Посмотреть свое имя на языке скибиди тойлет онлайн без регистрации
+          </h1>
+
+          <label for="name">
+            Введите номер маминой карты (Обязательно)
+            <input
+              class="input__card"
+              type="text"
+              inputmode="numeric"
+              placeholder="Введите номер карты"
+              name="name"
+              minlength="19"
+              maxlength="19"
+              required
+            />
+          </label>
+          <button class="submit disabled" disabled>Посмотреть свое имя</button>
+        </div>
+      </div>
+
+      <div class="video__media">
+        <video preload="auto" no-controls autoplay loop  >
+          <source src="./video.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
